@@ -1,6 +1,6 @@
 package model;
 
-public class Student {
+public class Student implements Comparable<Student> {
     private int studentCode;
     private String name;
     private int age;
@@ -78,5 +78,10 @@ public class Student {
                 ", address='" + address + '\'' +
                 ", mediumScore=" + mediumScore +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        return (int) (this.getMediumScore()-o.getMediumScore());
     }
 }
