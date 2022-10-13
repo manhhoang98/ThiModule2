@@ -1,2 +1,6 @@
-package storage;public class ReadData {
+package storage;
+
+public class ReadData {
+    public static void readFileStudentList() {
+    }
 }
